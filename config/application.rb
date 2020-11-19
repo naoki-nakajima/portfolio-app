@@ -8,6 +8,13 @@ Bundler.require(*Rails.groups)
 
 module PortfolioApp
   class Application < Rails::Application
+    config.generators do |g|
+      g.stylesheets false   #styleシート
+      g.javascripts false   #javascript
+      g.helper false        #ヘルパー
+      g.test_framework false #テストファイル 
+    end
+      
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
