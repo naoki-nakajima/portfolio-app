@@ -1,1 +1,64 @@
-hello rails
+.box
+  .topFhoto
+    %h1
+      Hello, I'm Naoki Nakajima
+    %ul
+      %li.details
+        Back End Developer & UX/UI Designer
+  .header
+    %h2 Naoki Nakajima
+    .header__navi
+      %ul
+        %li
+          ABOUT
+        %li
+          SKILLS
+        %li
+          PORTFOLIO
+        %li
+          SNS  
+        %li
+          RESUME
+        %li
+          CONTACT
+  .introduction
+    About Me
+    .introduction__contents 
+      .introduction__contents__photo
+        =image_tag "宇宙1", alt: "自画像", size: "200x200"
+      .introduction__contents__sentence
+        こんにちわ！
+  .skills
+    .skills__contents
+      %ul
+        %li.html
+          HTML
+        %li.css
+          CSS/SCSS
+        %li.rails
+          Ruby/Rails
+        %li.jquery
+          JQuery
+        %li.git
+          Git/GitHub
+        %li.docker
+          Docker
+        %li.aws
+          AWS
+  .portfolios
+    .portfolios__contents
+      %ul
+        %li
+          =image_tag "宇宙2", alt: "画像", size: "200x100"
+        %li
+          =image_tag "地球", alt: "画像", size: "200x100"
+  .sns
+    %ul
+      %li.tweeter
+        Tweeter
+      %li.github
+        GitHub
+      %li.quiita
+        Qiita
+  .footer
+    %small PortfoiloApp all rigths reserved
