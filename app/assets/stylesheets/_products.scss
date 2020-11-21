@@ -117,7 +117,7 @@
   }
 
   .sns {
-    min-height: 150px;
+    min-height: 300px;
     padding-top: 15px;
     ul {
       li {
@@ -126,6 +126,7 @@
         height: 100px;
         width: 32%;
         text-align: center; 
+
       }
       li:nth-child(3n-1) {
         margin: 0 2%;
@@ -146,3 +147,4 @@
     color: beige;
   }
 }
+
