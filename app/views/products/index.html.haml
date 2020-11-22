@@ -1,0 +1,103 @@
+.box
+  .topFhoto
+    %h1
+      Hello, I'm Naoki Nakajima
+    %ul
+      %li.details
+        Back End Developer & UX/UI Designer
+
+
+        
+  .header
+    %h2 Naoki Nakajima
+    .header__navi
+      %ul
+        %li
+          About
+        %li
+          Skills
+        %li
+          Portfolio
+        %li
+          Sns 
+        %li
+          Resume
+        %li
+          Contact
+
+
+
+  .introduction
+    .introduction__contents 
+      .introduction__contents__title
+        About 
+      .introduction__contents__sentence
+        兵庫県出身で13年間飲食業に携わってきました。<br>
+        2010年から、東京で働いていましたが名古屋出店が決まり 2017年に名古屋に異動。<br>
+        飲食業界ではIllustratorやPhotoshopを利用しメニュー・イベントのポスター等を作成、<br>
+        エクセルで顧客管理を行い、PCを使用し業務効率化を行っていた。<br>
+        コロナに直面し改めてどの業種をとってもITは必要不可欠な存在であることを気付かされエンジニアに転職を決意。<br>
+        現在プログラミングの勉強しながら転職活動中。
+      .introduction__contents__content
+        .introduction__contents__content__photo
+          =image_tag "宇宙1", alt: "自画像", size: "200x200"
+        .introduction__contents__content__profs
+          %dl.prof
+            %dt 名前：
+            %dd 中島 直樹  Nakajima Naoki         
+            %dt 所在地：                 
+            %dd 東京
+            %dt 出身：                   
+            %dd 群馬県
+            %dt お問い合わせ：            
+            %dd info@hamta9.com
+            %dt Twitter:               
+            %dd @Naoki_DieForYou
+
+
+
+  .skill
+    .skill__title
+      Skill
+    .skill__contents
+      %ul
+        %li.html
+          HTML
+        %li.css
+          CSS/SCSS
+        %li.rails
+          Ruby/Rails
+        %li.jquery
+          JQuery
+        %li.git
+          Git/GitHub
+        %li.docker
+          Docker
+        %li.aws
+          AWS
+
+
+
+  .portfolios
+    .portfolios__contents
+      %ul
+        %li
+          =image_tag "宇宙2", alt: "画像", size: "200x200"
+        %li
+          =image_tag "地球", alt: "画像", size: "200x200"
+
+
+
+  .sns
+    %ul
+      %li.tweeter 
+        Tweeter
+        -#.stylesheet
+          <a class="twitter-timeline" data-chrome=”noheader nofooter” data-lang="ja" data-width="250" data-height="300" data-theme="dark" href="https://twitter.com/Naoki_DieForYou?ref_src=twsrc%5Etfw"></a> 
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      %li.github
+        GitHub
+      %li.quiita
+        Qiita
+  .footer
+    %small PortfoiloApp all rigths reserved
