@@ -5,31 +5,61 @@
     %ul
       %li.details
         Back End Developer & UX/UI Designer
+
+
+        
   .header
     %h2 Naoki Nakajima
     .header__navi
       %ul
         %li
-          ABOUT
+          About
         %li
-          SKILLS
+          Skills
         %li
-          PORTFOLIO
+          Portfolio
         %li
-          SNS  
+          Sns 
         %li
-          RESUME
+          Resume
         %li
-          CONTACT
+          Contact
+
+
+
   .introduction
-    About Me
     .introduction__contents 
-      .introduction__contents__photo
-        =image_tag "宇宙1", alt: "自画像", size: "200x200"
+      .introduction__contents__title
+        About 
       .introduction__contents__sentence
-        こんにちわ！
-  .skills
-    .skills__contents
+        兵庫県出身で13年間飲食業に携わってきました。<br>
+        2010年から、東京で働いていましたが名古屋出店が決まり 2017年に名古屋に異動。<br>
+        飲食業界ではIllustratorやPhotoshopを利用しメニュー・イベントのポスター等を作成、<br>
+        エクセルで顧客管理を行い、PCを使用し業務効率化を行っていた。<br>
+        コロナに直面し改めてどの業種をとってもITは必要不可欠な存在であることを気付かされエンジニアに転職を決意。<br>
+        現在プログラミングの勉強しながら転職活動中。
+      .introduction__contents__content
+        .introduction__contents__content__photo
+          =image_tag "宇宙1", alt: "自画像", size: "200x200"
+        .introduction__contents__content__profs
+          %dl.prof
+            %dt 名前：
+            %dd 中島 直樹  Nakajima Naoki         
+            %dt 所在地：                 
+            %dd 東京
+            %dt 出身：                   
+            %dd 群馬県
+            %dt お問い合わせ：            
+            %dd info@hamta9.com
+            %dt Twitter:               
+            %dd @Naoki_DieForYou
+
+
+
+  .skill
+    .skill__title
+      Skill
+    .skill__contents
       %ul
         %li.html
           HTML
@@ -45,13 +75,19 @@
           Docker
         %li.aws
           AWS
+
+
+
   .portfolios
     .portfolios__contents
       %ul
         %li
-          =image_tag "宇宙2", alt: "画像", size: "200x100"
+          =image_tag "宇宙2", alt: "画像", size: "200x200"
         %li
-          =image_tag "地球", alt: "画像", size: "200x100"
+          =image_tag "地球", alt: "画像", size: "200x200"
+
+
+
   .sns
     %ul
       %li.tweeter 
