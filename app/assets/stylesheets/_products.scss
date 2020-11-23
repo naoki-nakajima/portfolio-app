@@ -93,19 +93,20 @@
   }
 
   .skill {
-    min-height: 00px;
-    padding-top: 15px;
+    height: 800px;
+    background-color: navy;
+    padding-top: 100px;
     &__title {
-      color: navy;
+      color: white;
       font-size: 40px;
-      padding: 25px 0 0 250px;
+      padding: 25px 0 75px 250px;
     }
     &__contents {
       ul {
         li {
           display: block;
           float: left;
-          height: 100px;
+          height: 200px;
           width: 32%;
           text-align: center; 
         }
@@ -122,7 +123,7 @@
   }
 
   .portfolios {
-    min-height: 200px;
+    height: 500px;
     padding-top: 15px;
     &__contents {
       ul {

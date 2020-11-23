@@ -1,80 +1,233 @@
 window.onload = function() {
-  var ctx = document.getElementById("my").getContext('2d');
+  var ctx = document.getElementById("html").getContext('2d');
   var myChart = new Chart(ctx, {
-  type: 'line',
+
+  type: 'doughnut',
     data: {
-      labels: ['8月1日', '8月2日', '8月3日', '8月4日', '8月5日', '8月6日', '8月7日'],
       datasets: [
         {
-          label: '最高気温(度）',
-          data: [35, 34, 37, 35, 34, 35, 34, 25],
-          borderColor: "rgba(255,0,0,1)",
-          backgroundColor: "rgba(0,0,0,0)"
-        },
-        {
-          label: '最低気温(度）',
-          data: [25, 27, 27, 25, 26, 27, 25, 21],
-          borderColor: "rgba(0,0,255,1)",
-          backgroundColor: "rgba(0,0,0,0)"
+          data: [70, 30],
+          backgroundColor: [
+            "#ffffff",
+            "#000080"
+          ],
+          borderColor: 'transparent'
         }
       ],
     },
     options: {
+      cutoutPercentage: 88,
+      legend: {
+        display: false
+      },
       title: {
         display: true,
-        text: '気温（8月1日~8月7日）'
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-            suggestedMax: 40,
-            suggestedMin: 0,
-            stepSize: 10,
-            callback: function(value, index, values){
-              return  value +  '度'
-            }
-          }
-        }]
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'HTML',
       },
     }
   });
 
-  var ctx = document.getElementById("mychart").getContext('2d');
+  var ctx = document.getElementById("css").getContext('2d');
   var myChart = new Chart(ctx, {
-  type: 'line',
+
+  type: 'doughnut',
     data: {
-      labels: ['8月1日', '8月2日', '8月3日', '8月4日', '8月5日', '8月6日', '8月7日'],
       datasets: [
         {
-          label: '最高気温(度）',
-          data: [35, 34, 37, 35, 34, 35, 34, 25],
-          borderColor: "rgba(255,0,0,1)",
-          backgroundColor: "rgba(0,0,0,0)"
-        },
-        {
-          label: '最低気温(度）',
-          data: [25, 27, 27, 25, 26, 27, 25, 21],
-          borderColor: "rgba(0,0,255,1)",
-          backgroundColor: "rgba(0,0,0,0)"
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
         }
       ],
     },
     options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
       title: {
         display: true,
-        text: '気温（8月1日~8月7日）'
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'CSS',
       },
-      scales: {
-        yAxes: [{
-          ticks: {
-            suggestedMax: 40,
-            suggestedMin: 0,
-            stepSize: 10,
-            callback: function(value, index, values){
-              return  value +  '度'
-            }
-          }
-        }]
+    }
+  });
+
+  var ctx = document.getElementById("rails").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'Rails',
+      },
+    }
+  });
+
+  var ctx = document.getElementById("jquery").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'JQuery',
+      },
+    }
+  });
+
+  var ctx = document.getElementById("python").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'Python',
+      },
+    }
+  });
+
+  var ctx = document.getElementById("git").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'Git/GitHub',
+      },
+    }
+  });
+
+  var ctx = document.getElementById("docker").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'Docker',
+      },
+    }
+  });
+
+  var ctx = document.getElementById("aws").getContext('2d');
+  var myChart = new Chart(ctx, {
+
+  type: 'doughnut',
+    data: {
+      datasets: [
+        {
+          data: [80, 20],
+          backgroundColor: [
+            "#000080",
+            "#ffffff"
+          ],
+        }
+      ],
+    },
+    options: {
+      cutoutPercentage: 80,
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        fontSize: 20,
+        fontColor: "#ffffff",
+        text: 'AWS',
       },
     }
   });
