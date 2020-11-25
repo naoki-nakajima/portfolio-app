@@ -23,7 +23,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'HTML',
       },
     }
@@ -52,7 +52,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'CSS',
       },
     }
@@ -81,7 +81,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'Rails',
       },
     }
@@ -110,7 +110,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'JQuery',
       },
     }
@@ -139,7 +139,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'Python',
       },
     }
@@ -168,7 +168,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'Git/GitHub',
       },
     }
@@ -197,7 +197,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'Docker',
       },
     }
@@ -226,7 +226,7 @@ window.onload = function() {
       title: {
         display: true,
         fontSize: 20,
-        fontColor: "#ffffff",
+        fontColor: "#000080",
         text: 'AWS',
       },
     }
