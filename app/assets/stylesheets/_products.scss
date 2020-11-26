@@ -23,12 +23,10 @@
 
   .header {
     display: flex;
-    width: 100vh;
     justify-content: space-between;
     background-color: navy;
     height: 75px;
     align-items: center;
-    position: fixed;
 
     h2 {
       color :beige;
@@ -48,10 +46,17 @@
       }
     }
   }
+  .h_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
   .introduction {
     &__contents {
       height: 400px;
+      padding-top: 150px;
       &__title {
         color: navy;
         font-size: 40px;
