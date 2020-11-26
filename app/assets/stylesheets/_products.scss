@@ -23,10 +23,13 @@
 
   .header {
     display: flex;
+    width: 100vh;
     justify-content: space-between;
     background-color: navy;
     height: 75px;
     align-items: center;
+    position: fixed;
+
     h2 {
       color :beige;
       font-size: large;
@@ -150,25 +153,26 @@
   }
 
   .sns {
-    height: 400px;
+    height: 200px;
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    text-align: center; 
+    margin: 0 auto;
     ul {
       li {
-        display: block;
-        float: left;
-        height: 100px;
-        width: 32%;
-        text-align: center; 
-
+        height: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        color: navy;
       }
-      li:nth-child(3n-1) {
-        margin: 0 2%;
+      li.fab.fa-twitter {
+        font-size: 50px;
       }
-    }
-    ul:after {
-      content: "";
-      clear: both;
-      display: block;
+      li.fab.fa-github {
+        font-size: 50px;
+      }
     }
   }
 
