@@ -93,6 +93,12 @@
               font-size: 15px;
               font-weight: 200;
               padding-left: 200px;
+              a {
+                text-decoration: none;
+                color :black;
+                font-size: 15px;
+                font-weight: 200;
+              }
             }
           }
         }
@@ -130,13 +136,14 @@
   }
 
   .portfolios {
-    height: 300px;
+    
     &__title {
       color: navy;
       font-size: 40px;
       padding: 25px 0 75px 250px;
     }
     &__contents {
+      height: 400px;
       ul {
         li {
           display: block;
@@ -144,6 +151,9 @@
           height: 400px;
           width: 32%;
           text-align: center; 
+          p {
+            padding-top: 15px;
+          }
         }
         li:nth-child(3n-1) {
           margin: 0 2%;
@@ -171,6 +181,11 @@
         font-size: 25px;
         font-weight: bold;
         color: navy;
+        
+        .qiita {
+          text-decoration: none;
+          color :navy;
+        }
       }
       li.fab.fa-twitter {
         font-size: 50px;
@@ -178,6 +193,7 @@
       li.fab.fa-github {
         font-size: 50px;
       }
+      
     }
   }
 

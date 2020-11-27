@@ -50,7 +50,7 @@
             %dd ファッション(JillSander)  音楽(Rock Techno)
             %dt お問い合わせ：            
             %dd champagnegoldsupermarket.79@gmail.com
-
+              
 
 
   .skill
@@ -83,28 +83,27 @@
     .portfolios__contents
       %ul
         %li
-          =image_tag "宇宙2", alt: "画像", size: "200x250"
+          = link_to image_tag("宇宙2", alt: "画像", size: "200x250"), "/"
           %p test <br> test
-        %li
-          =image_tag "地球", alt: "画像", size: "200x250"
-        %li
-          =image_tag "地球", alt: "画像", size: "200x250"
 
 
   .sns
     %ul
       %li.tweeter 
-        Tweeter
-      %li.fab.fa-twitter
+        Twitter
+      = link_to "https://twitter.com/Naoki_DieForYou" do
+        %li.fab.fa-twitter
         -#.stylesheet
           <a class="twitter-timeline" data-chrome=”noheader nofooter” data-lang="ja" data-width="250" data-height="300" data-theme="dark" href="https://twitter.com/Naoki_DieForYou?ref_src=twsrc%5Etfw"></a> 
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     %ul
       %li.github
         GitHub
-      %li.fab.fa-github
+      = link_to "https://github.com/naoki-nakajima" do
+        %li.fab.fa-github
+        
     %ul
       %li.qiita
-        Qiita
+        = link_to "Qiita", "https://qiita.com/naoki-nakajima", class: "qiita"
   .footer
     %small PortfoiloApp all rigths reserved
