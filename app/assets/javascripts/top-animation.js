@@ -1,18 +1,18 @@
 $(function () {
   $('.greeting').textillate({
-    loop: true,                 //ループ
+    loop: false,                 //ループ
     minDisplayTime: 1000,       //テキストが置き換えられるまでの時間
     // initialDelay: 1000,         //遅延時間
     autoStart: true,            //アニメーション自動スタート
     // フェードイン
     in: {
-      effect: 'flip',         //アニメーション効果、エフェクトの種類
+      effect: 'flip',        //アニメーション効果、エフェクトの種類
       delayScale: 1.5,          //遅延時間の指定
       delay: 50,                //文字ごとの遅延時間
       sync: false,              //『true』全ての文字に同時に適応される
-      shuffle: false            //ランダム
+      shuffle: false,            //ランダム
     },  
-    out: false
+    
     // フェードアウト
     //out: {
       //effect: 'fadeOut',  
@@ -22,16 +22,19 @@ $(function () {
       //shuffle: false
     //}
   });
+  
 
   $('.details').textillate({
-    loop: false,                 
-    minDisplayTime: 100,       
-    autoStart: true,            
+    loop: false,
+    minDisplayTime: 100,
+    autoStart: true,
     
     in: {
-      effect: 'bounceInDown',         
-      delayScale: 1.5,          
-      delay: 50,                            
+      effect: 'bounceInDown',
+      delayScale: 1.5,
+      delay: 50,
+      sync: false,
+      shuffle: false
     },
   });
  })
