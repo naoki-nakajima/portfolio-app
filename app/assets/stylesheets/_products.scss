@@ -3,32 +3,31 @@
   width: 100%;
   .topFhoto {
     color: navy;
-    height: 400px;
+    height: 600px;
     text-align: center;
     h1 {
       display: block;
       font-size: 75px;
       height: 150px;
-      line-height: 400px;
+      line-height: 500px;
+      font-family: 'Noto Serif JP', sans-serif;
     }
     ul {
       .details {
         display: block;
         font-size: 20px;
-        height: 100px;
-        line-height: 300px;
+        line-height: 600px;
+        font-family: 'Noto Sans JP', sans-serif;
       }
     }
   }
 
   .header {
     display: flex;
-    width: 100vh;
     justify-content: space-between;
     background-color: navy;
     height: 75px;
     align-items: center;
-    position: fixed;
 
     h2 {
       color :beige;
@@ -48,10 +47,17 @@
       }
     }
   }
+  .h_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
   .introduction {
     &__contents {
-      height: 400px;
+      height: 300px;
+      padding-top: 150px;
       &__title {
         color: navy;
         font-size: 40px;
@@ -88,6 +94,12 @@
               font-size: 15px;
               font-weight: 200;
               padding-left: 200px;
+              a {
+                text-decoration: none;
+                color :black;
+                font-size: 15px;
+                font-weight: 200;
+              }
             }
           }
         }
@@ -101,14 +113,14 @@
     &__title {
       color: navy;
       font-size: 40px;
-      padding: 25px 0 75px 250px;
+      padding: 0 0 30px 250px;
     }
     &__contents {
       ul {
         li {
           display: block;
           float: left;
-          height: 200px;
+          height: 170px;
           width: 32%;
           text-align: center; 
         }
@@ -125,13 +137,14 @@
   }
 
   .portfolios {
-    height: 300px;
+    
     &__title {
       color: navy;
       font-size: 40px;
       padding: 25px 0 75px 250px;
     }
     &__contents {
+      height: 400px;
       ul {
         li {
           display: block;
@@ -139,6 +152,9 @@
           height: 400px;
           width: 32%;
           text-align: center; 
+          p {
+            padding-top: 15px;
+          }
         }
         li:nth-child(3n-1) {
           margin: 0 2%;
@@ -166,6 +182,11 @@
         font-size: 25px;
         font-weight: bold;
         color: navy;
+        
+        .qiita {
+          text-decoration: none;
+          color :navy;
+        }
       }
       li.fab.fa-twitter {
         font-size: 50px;
@@ -173,6 +194,7 @@
       li.fab.fa-github {
         font-size: 50px;
       }
+      
     }
   }
 
@@ -185,3 +207,25 @@
   }
 }
 
+.label-box {
+  /* box-sizing はプラグインで padding-top を付与したときに height を変えないようにするために付けています */
+  box-sizing: border-box;
+  height: 180px;
+  width: 300px;
+  /* 縦横中央揃え */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* グラフ上に配置 */
+  margin-top: -148px;
+  margin-left: 83px;
+}
+
+/* 値 */
+.label-box .label {
+  font-size: 18px;
+}
+/* パーセント */
+.label-box .label .per {
+  font-size: 13px;
+}

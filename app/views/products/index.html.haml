@@ -1,6 +1,6 @@
 .box
   .topFhoto
-    %h1
+    %h1.greeting
       Hello, I'm Naoki Nakajima
     %ul
       %li.details
@@ -50,7 +50,7 @@
             %dd ファッション(JillSander)  音楽(Rock Techno)
             %dt お問い合わせ：            
             %dd champagnegoldsupermarket.79@gmail.com
-
+              
 
 
   .skill
@@ -59,21 +59,21 @@
     .skill__contents
       %ul
         %li.html
-          <canvas id="html" height="50" width="150"></canvas>
+          <canvas id="html" height="20" width="80"></canvas>
         %li.css
-          <canvas id="css" height="50" width="150"></canvas>
+          <canvas id="css" height="20" width="80"></canvas>
         %li.rails
-          <canvas id="rails" height="50" width="150"></canvas>
+          <canvas id="rails" height="20" width="80"></canvas>
         %li.jquery
-          <canvas id="jquery" height="50" width="150"></canvas>
+          <canvas id="jquery" height="20" width="80"></canvas>
         %li.python
-          <canvas id="python" height="50" width="150"></canvas>
+          <canvas id="python" height="20" width="80"></canvas>
         %li.git
-          <canvas id="git" height="50" width="150"></canvas>
+          <canvas id="git" height="20" width="80"></canvas>
         %li.docker
-          <canvas id="docker" height="50" width="150"></canvas>
+          <canvas id="docker" height="20" width="80"></canvas>
         %li.aws
-          <canvas id="aws" height="50" width="150"></canvas>
+          <canvas id="aws" height="20" width="80"></canvas>
         
 
 
@@ -83,28 +83,27 @@
     .portfolios__contents
       %ul
         %li
-          =image_tag "宇宙2", alt: "画像", size: "200x250"
+          = link_to image_tag("宇宙2", alt: "画像", size: "200x250"), "/"
           %p test <br> test
-        %li
-          =image_tag "地球", alt: "画像", size: "200x250"
-        %li
-          =image_tag "地球", alt: "画像", size: "200x250"
 
 
   .sns
     %ul
       %li.tweeter 
-        Tweeter
-      %li.fab.fa-twitter
+        Twitter
+      = link_to "https://twitter.com/Naoki_DieForYou" do
+        %li.fab.fa-twitter
         -#.stylesheet
           <a class="twitter-timeline" data-chrome=”noheader nofooter” data-lang="ja" data-width="250" data-height="300" data-theme="dark" href="https://twitter.com/Naoki_DieForYou?ref_src=twsrc%5Etfw"></a> 
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     %ul
       %li.github
         GitHub
-      %li.fab.fa-github
+      = link_to "https://github.com/naoki-nakajima" do
+        %li.fab.fa-github
+        
     %ul
       %li.qiita
-        Qiita
+        = link_to "Qiita", "https://qiita.com/naoki-nakajima", class: "qiita"
   .footer
     %small PortfoiloApp all rigths reserved

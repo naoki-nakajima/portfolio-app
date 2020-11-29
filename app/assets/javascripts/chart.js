@@ -6,26 +6,24 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [70, 30],
+          data: [30, 70],
           backgroundColor: [
-            "#ffffff",
-            "#000080"
+            "#000080",
+            "#dbdbdc"
           ],
-          borderColor: 'transparent'
         }
       ],
     },
     options: {
-      cutoutPercentage: 88,
-      legend: {
-        display: false
-      },
+      cutoutPercentage: 80,
+      
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'HTML',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -36,25 +34,23 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [30, 70],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'CSS',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -65,10 +61,10 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [40, 60],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
@@ -84,6 +80,7 @@ window.onload = function() {
         fontColor: "#000080",
         text: 'Rails',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -94,25 +91,24 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [15, 85],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
+      
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'JQuery',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -123,25 +119,24 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [5, 95],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
+      
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'Python',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -152,25 +147,24 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [60, 40],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
+  
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'Git/GitHub',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -181,25 +175,23 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [60, 40],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'Docker',
       },
+      tooltips: { enabled: false },
     }
   });
 
@@ -210,25 +202,27 @@ window.onload = function() {
     data: {
       datasets: [
         {
-          data: [80, 20],
+          data: [15, 85],
           backgroundColor: [
             "#000080",
-            "#ffffff"
+            "#dbdbdc"
           ],
         }
       ],
     },
     options: {
       cutoutPercentage: 80,
-      legend: {
-        display: false
-      },
       title: {
         display: true,
         fontSize: 20,
         fontColor: "#000080",
         text: 'AWS',
       },
+      tooltips: { enabled: false },
+      
+      
     }
   });
 }
+
+
